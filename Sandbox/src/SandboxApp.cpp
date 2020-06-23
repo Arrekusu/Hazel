@@ -6,7 +6,6 @@ public:
 	ExampleLayer()
 		:Layer("Example")
 	{
-
 	}
 
 	void OnUpdate() override
@@ -26,8 +25,7 @@ class Sandbox : public Hazel::Application
 public:
 	Sandbox()
 	{
-			PushLayer(new ExampleLayer());
-			PushOverlay(new Hazel::ImGuiLayer());
+		PushLayer(new ExampleLayer());
 	}
 
 	~Sandbox()
